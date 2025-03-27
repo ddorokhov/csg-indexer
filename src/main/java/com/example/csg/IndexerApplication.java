@@ -37,8 +37,9 @@ public class IndexerApplication implements CommandLineRunner {
 			if(fileResult.errorMessage() != null){
 				System.out.println("Error: " + fileResult.errorMessage());
 			} else {
-				fileResult.result().forEach((rule, count)->System.out.println(rule.label +"  : " +count));
+				fileResult.result().forEach((rule, count)->System.out.println(rule.label +": " +count));
 			}
+			System.out.println();
 		}
 
 	}
